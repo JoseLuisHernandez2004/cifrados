@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas de Cifrado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Herramientas de Cifrado</h1>
+        <nav>
+            <ul>
+                <li><a href="#cesar">Cifrado César</a></li>
+                <li><a href="#escitala">Cifrado Escítala</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Cifrado César -->
+        <section id="cesar">
+            <h2>Cifrado César</h2>
+            <label for="cesarMensaje">Mensaje:</label>
+            <input type="text" id="cesarMensaje" placeholder="Escribe el mensaje...">
+            
+            <label for="cesarClave">Clave (desplazamiento):</label>
+            <input type="number" id="cesarClave" placeholder="Ingresa la clave...">
+            
+            <button onclick="cifrarCesar()">Cifrar</button>
+            <button onclick="descifrarCesar()">Descifrar</button>
+            
+            <h3>Resultado:</h3>
+            <textarea id="cesarResultado" readonly></textarea>
+        </section>
+        
+        <!-- Cifrado Escítala -->
+        <section id="escitala">
+            <h2>Cifrado Escítala</h2>
+            <label for="escitalaMensaje">Mensaje:</label>
+            <input type="text" id="escitalaMensaje" placeholder="Escribe el mensaje...">
+            
+            <label for="escitalaClave">Clave (número de columnas):</label>
+            <input type="number" id="escitalaClave" placeholder="Ingresa el número de columnas...">
+            
+            <button onclick="cifrarEscitala()">Cifrar</button>
+            <button onclick="descifrarEscitala()">Descifrar</button>
+            
+            <h3>Resultado:</h3>
+            <textarea id="escitalaResultado" readonly></textarea>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
